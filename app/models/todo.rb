@@ -3,5 +3,5 @@ class Todo < ApplicationRecord
   has_many :items, dependent: :destroy
 
   # validations
-  validate_presence_of :title, :created_by
+  validates_presence_of :title, :created_by
 end
